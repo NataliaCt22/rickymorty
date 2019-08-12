@@ -11,7 +11,6 @@ const getCharacters = async (dispatch) => {
   }
 }
 
-
 export default {
   getCharacters
 } 

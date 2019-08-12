@@ -43,7 +43,7 @@ function ListCharacters (props) {
   containerClasses = openDetail === true ? 'content-view col-md-6' : 'content-view col-md-12'
 
   return (
-    <div className='col-md-6 col-sm-12'>
+    <div className="col-lg-6 col-md-12 col-sm-12">
       <div className="list-group list-group-flush">
         {items}
       </div>
