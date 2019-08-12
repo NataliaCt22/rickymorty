@@ -22,7 +22,7 @@ function AllContent () {
     <div className="vh-100">
       <h1 className="charactersHeader">R&M CHARACTERS</h1>
       <span className="quantity bg-transparent"> {state.characters.length} characters</span>
-      <div className="row">
+      <div className="row m-0 text-break">
       	<ListCharacters />
       	<CharacterDetail />
       </div>
