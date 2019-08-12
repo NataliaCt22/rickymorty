@@ -21,7 +21,7 @@ function CharacterDetail (props) {
     <div className="col-lg-6 col-md-12 col-sm-12">
       { info && info.name ? <div className="offset-lg-2 col-lg-8 col-md-12">
           <div className="detailImage" style={{backgroundImage: 'url('+info.image+')'}}></div>
-          <div>
+          <div className="mb-3">
             <h3 className="bg-main-blue p-3 text-white detail-name">{info.name}</h3>
             <div className="text-left">
               <div className="color-main-blue font-weight-bold">Status: {info.status ? info.status : '-'}</div>
