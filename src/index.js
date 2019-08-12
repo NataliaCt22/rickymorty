@@ -8,10 +8,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Hooks, {StoreProvider} from './Hooks/init'
 
-ReactDOM.render(<BrowserRouter>
-  	<App />
-  </BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(
+  <StoreProvider>
+	<BrowserRouter>
+  	  <App />
+    </BrowserRouter>
+  </StoreProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
